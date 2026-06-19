@@ -81,41 +81,41 @@ export default function TestingGateway() {
   }, [testingStatus]);
 
   return (
-    <section id="test" className="w-full min-h-screen py-24 bg-white text-[#1d1d1f] flex items-center justify-center border-b border-[#e0e0e0]">
+    <section id="test" className="w-full min-h-screen py-24 bg-black text-white flex items-center justify-center border-b border-[#27272c]">
       <div className="max-w-6xl w-full px-4 md:px-8">
         {/* Title */}
         <div className="mb-16 text-center lg:text-left">
-          <div className="font-mono text-[12px] text-[#0066cc] font-bold uppercase mb-2 tracking-widest">
+          <div className="font-mono text-[12px] text-[#2997ff] font-bold uppercase mb-2 tracking-widest">
             03 / Testing Gateway
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight apple-tight mb-4">
             Testing Gateway
           </h2>
-          <p className="text-lg text-gray-500 font-sans max-w-2xl leading-relaxed">
+          <p className="text-lg text-gray-400 font-sans max-w-2xl leading-relaxed">
             Validate every code commit and chart values with fully automated Unit & Integration test suites. Target coverage: 92%.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Logs Terminal */}
-          <div className="lg:col-span-7 bg-[#f5f5f7] border border-[#e0e0e0] rounded-lg p-5 flex flex-col min-h-[350px] shadow-sm relative">
-            <div className="flex items-center justify-between pb-3 border-b border-[#e0e0e0] mb-4 text-xs font-mono text-gray-500">
+          <div className="lg:col-span-7 bg-[#0d0d11] border border-[#27272c] rounded-lg p-5 flex flex-col min-h-[350px] shadow-2xl relative">
+            <div className="flex items-center justify-between pb-3 border-b border-[#27272c] mb-4 text-xs font-mono text-gray-500">
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-gray-400"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-gray-400"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-gray-400"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-600"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-600"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-gray-600"></span>
                 <span className="ml-2 font-semibold">teamcity-test-report</span>
               </div>
               {activeSuite && (
-                <div className="text-[10px] bg-[#0066cc]/10 text-[#0066cc] px-2 py-0.5 rounded-full font-mono animate-pulse">
+                <div className="text-[10px] bg-[#0066cc]/20 text-[#2997ff] px-2 py-0.5 rounded-full font-mono animate-pulse">
                   RUNNING: {activeSuite}
                 </div>
               )}
             </div>
 
-            <div className="flex-1 overflow-y-auto font-mono text-[12px] text-gray-600 space-y-1.5 scrollbar-none max-h-[300px]">
+            <div className="flex-1 overflow-y-auto font-mono text-[12px] text-gray-300 space-y-1.5 scrollbar-none max-h-[300px]">
               {runLogs.length === 0 ? (
-                <div className="h-full flex items-center justify-center text-gray-400 italic">
+                <div className="h-full flex items-center justify-center text-gray-500 italic">
                   Gateway Idle. Ready to audit package sanity.
                 </div>
               ) : (
@@ -123,8 +123,8 @@ export default function TestingGateway() {
                   if (!log) return null;
                   const isOk = log.includes("[OK]");
                   return (
-                    <div key={idx} className={`flex items-start ${isOk ? "text-emerald-600 font-semibold" : ""}`}>
-                      <span className="text-gray-400 mr-2">{isOk ? "✓" : "❯"}</span>
+                    <div key={idx} className={`flex items-start ${isOk ? "text-emerald-400 font-semibold" : ""}`}>
+                      <span className="text-gray-500 mr-2">{isOk ? "✓" : "❯"}</span>
                       <span>{log}</span>
                     </div>
                   );
@@ -134,22 +134,22 @@ export default function TestingGateway() {
           </div>
 
           {/* Metrics Panel */}
-          <div className="lg:col-span-5 bg-white border border-[#e0e0e0] rounded-lg p-6 flex flex-col justify-between hover:shadow-lg transition-all border-glow">
+          <div className="lg:col-span-5 bg-[#16161a] border border-[#27272c] rounded-lg p-6 flex flex-col justify-between hover:shadow-lg transition-all border-glow">
             <div>
-              <div className="flex items-center justify-between pb-4 border-b border-[#f0f0f0] mb-6">
+              <div className="flex items-center justify-between pb-4 border-b border-[#27272c] mb-6">
                 <span className="font-mono text-[12px] font-bold text-gray-500 uppercase tracking-wider">Test Report</span>
-                <Award className="w-5 h-5 text-[#0066cc]" />
+                <Award className="w-5 h-5 text-[#2997ff]" />
               </div>
 
               {/* Counts */}
               <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="p-4 rounded-lg bg-[#f5f5f7]">
+                <div className="p-4 rounded-lg bg-[#242429]">
                   <div className="text-[10px] font-mono text-gray-500 mb-1">TOTAL PASSED</div>
-                  <div className="text-3xl font-mono font-bold text-[#1d1d1f] tracking-tight">
-                    {passCount} <span className="text-xs text-gray-400">/ 480</span>
+                  <div className="text-3xl font-mono font-bold text-white tracking-tight">
+                    {passCount} <span className="text-xs text-gray-500">/ 480</span>
                   </div>
                 </div>
-                <div className="p-4 rounded-lg bg-[#f5f5f7]">
+                <div className="p-4 rounded-lg bg-[#242429]">
                   <div className="text-[10px] font-mono text-gray-500 mb-1">CODE COVERAGE</div>
                   <div className="text-3xl font-mono font-bold text-[#ff7a4c] tracking-tight flex items-center">
                     <span>{coverage}%</span>
@@ -159,11 +159,11 @@ export default function TestingGateway() {
 
               {/* Progress bar */}
               <div className="space-y-2 mb-6">
-                <div className="flex justify-between text-xs text-gray-500 font-sans">
+                <div className="flex justify-between text-xs text-gray-400 font-sans">
                   <span>Coverage threshold check (Target: 85%+)</span>
                   <span className="font-mono font-semibold">{coverage}%</span>
                 </div>
-                <div className="w-full h-2 bg-[#f0f0f0] rounded-full overflow-hidden">
+                <div className="w-full h-2 bg-[#27272a] rounded-full overflow-hidden">
                   <div 
                     className="h-full bg-[#ff7a4c] transition-all duration-300"
                     style={{ width: `${coverage}%` }}
@@ -175,9 +175,9 @@ export default function TestingGateway() {
             <button
               onClick={triggerTests}
               disabled={testingStatus === "running"}
-              className={`w-full py-3 px-6 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
+              className={`w-fit mx-auto md:w-full py-3 px-8 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
                 testingStatus === "running"
-                  ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                  ? "bg-gray-800 text-gray-500 cursor-not-allowed"
                   : "bg-[#0066cc] hover:bg-[#0071e3] text-white shadow-md active:scale-95"
               }`}
             >

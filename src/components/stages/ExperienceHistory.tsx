@@ -90,18 +90,18 @@ export default function ExperienceHistory() {
   };
 
   return (
-    <section id="experience" className="w-full min-h-screen py-24 bg-[#f5f5f7] text-[#1d1d1f] flex items-center justify-center border-b border-[#e0e0e0]">
+    <section id="experience" className="w-full min-h-screen py-24 bg-[#0d0d11] text-white flex items-center justify-center border-b border-[#27272c]">
       <div className="max-w-6xl w-full px-4 md:px-8">
         
         {/* Title Block */}
         <div className="mb-16 text-center lg:text-left">
-          <div className="font-mono text-[12px] text-[#0066cc] font-bold uppercase mb-2 tracking-widest">
+          <div className="font-mono text-[12px] text-[#2997ff] font-bold uppercase mb-2 tracking-widest">
             08 / Pipeline History
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight apple-tight mb-4">
             Milestones & Environments
           </h2>
-          <p className="text-lg text-gray-500 font-sans max-w-2xl leading-relaxed">
+          <p className="text-lg text-gray-400 font-sans max-w-2xl leading-relaxed">
             A comprehensive record of 15+ years managing production-grade releases, cloud environments, application servers, and academic qualifications.
           </p>
         </div>
@@ -116,9 +116,9 @@ export default function ExperienceHistory() {
         >
           {/* Timeline of Professional Experience */}
           <div className="lg:col-span-8 flex flex-col gap-6">
-            <div className="flex items-center gap-2 mb-2 text-gray-500 border-b border-[#e0e0e0] pb-3">
-              <Briefcase className="w-4 h-4 text-[#0066cc]" />
-              <h3 className="font-mono text-[11px] font-bold tracking-widest uppercase">
+            <div className="flex items-center gap-2 mb-2 text-gray-500 border-b border-[#27272c] pb-3">
+              <Briefcase className="w-4 h-4 text-[#2997ff]" />
+              <h3 className="font-mono text-[11px] font-bold tracking-widest uppercase text-gray-500">
                 PROFESSIONAL EXPERIENCE
               </h3>
             </div>
@@ -126,44 +126,44 @@ export default function ExperienceHistory() {
             {workExperience.map((exp, idx) => (
               <motion.div 
                 key={idx}
-                className="bg-white rounded-[18px] p-6 border border-[#e0e0e0] flex flex-col hover:shadow-lg transition-all border-glow"
+                className="bg-[#16161a] rounded-[18px] p-6 border border-[#27272c] flex flex-col hover:shadow-lg transition-all border-glow"
                 variants={itemVariants}
               >
                 {/* Card Header */}
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-[#f0f0f0] pb-4 mb-4">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-[#27272c] pb-4 mb-4">
                   <div>
-                    <h4 className="text-lg font-bold text-[#1d1d1f] leading-tight">
+                    <h4 className="text-lg font-bold text-white leading-tight">
                       {exp.role}
                     </h4>
-                    <div className="text-sm font-semibold text-[#0066cc] mt-0.5">
+                    <div className="text-sm font-semibold text-[#2997ff] mt-0.5">
                       {exp.company}
                     </div>
                   </div>
-                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500 font-mono">
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 font-mono">
                     <span className="flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5 text-gray-400" />
+                      <Calendar className="w-3.5 h-3.5 text-gray-500" />
                       {exp.tenure}
                     </span>
                     <span className="flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-gray-400" />
+                      <MapPin className="w-3.5 h-3.5 text-gray-500" />
                       {exp.location}
                     </span>
                   </div>
                 </div>
 
                 {/* Bullets */}
-                <ul className="space-y-2 text-[13px] text-gray-600 list-disc list-outside pl-4 leading-relaxed mb-5">
+                <ul className="space-y-2 text-[13px] text-gray-400 list-disc list-outside pl-4 leading-relaxed mb-5">
                   {exp.bullets.map((bullet, bulletIdx) => (
                     <li key={bulletIdx}>{bullet}</li>
                   ))}
                 </ul>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#f0f0f0]">
+                <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#27272c]">
                   {exp.tags.map((tag, tagIdx) => (
                     <span 
                       key={tagIdx} 
-                      className="px-2.5 py-1.5 rounded-full text-[10px] font-mono font-medium bg-[#f5f5f7] border border-[#e0e0e0] text-[#1d1d1f] select-none"
+                      className="px-2.5 py-1.5 rounded-full text-[10px] font-mono font-medium bg-[#242429] border border-[#2d2d34] text-gray-300 hover:bg-[#0066cc] hover:border-[#0066cc] hover:text-white cursor-pointer select-none transition-all duration-200 active:scale-95"
                     >
                       {tag}
                     </span>
@@ -178,9 +178,9 @@ export default function ExperienceHistory() {
             
             {/* Education Block */}
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-2 text-gray-500 border-b border-[#e0e0e0] pb-3">
-                <GraduationCap className="w-4 h-4 text-[#0066cc]" />
-                <h3 className="font-mono text-[11px] font-bold tracking-widest uppercase">
+              <div className="flex items-center gap-2 text-gray-500 border-b border-[#27272c] pb-3">
+                <GraduationCap className="w-4 h-4 text-[#2997ff]" />
+                <h3 className="font-mono text-[11px] font-bold tracking-widest uppercase text-gray-500">
                   EDUCATION
                 </h3>
               </div>
@@ -188,16 +188,16 @@ export default function ExperienceHistory() {
               {educationList.map((edu, idx) => (
                 <motion.div 
                   key={idx}
-                  className="bg-white rounded-[18px] p-5 border border-[#e0e0e0] flex flex-col hover:shadow-lg transition-all border-glow"
+                  className="bg-[#16161a] rounded-[18px] p-5 border border-[#27272c] flex flex-col hover:shadow-lg transition-all border-glow"
                   variants={itemVariants}
                 >
-                  <h4 className="text-sm font-bold text-[#1d1d1f]">
+                  <h4 className="text-sm font-bold text-white">
                     {edu.degree}
                   </h4>
-                  <p className="text-xs font-semibold text-[#0066cc] mt-0.5">
+                  <p className="text-xs font-semibold text-[#2997ff] mt-0.5">
                     {edu.school}
                   </p>
-                  <div className="flex items-center justify-between text-[11px] text-gray-500 font-mono mt-3 pt-2 border-t border-[#f5f5f7]">
+                  <div className="flex items-center justify-between text-[11px] text-gray-500 font-mono mt-3 pt-2 border-t border-[#27272c]">
                     <span>{edu.year}</span>
                     <span>{edu.location}</span>
                   </div>
@@ -207,21 +207,21 @@ export default function ExperienceHistory() {
 
             {/* Certifications Block */}
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-2 text-gray-500 border-b border-[#e0e0e0] pb-3">
-                <Award className="w-4 h-4 text-[#0066cc]" />
-                <h3 className="font-mono text-[11px] font-bold tracking-widest uppercase">
+              <div className="flex items-center gap-2 text-gray-500 border-b border-[#27272c] pb-3">
+                <Award className="w-4 h-4 text-[#2997ff]" />
+                <h3 className="font-mono text-[11px] font-bold tracking-widest uppercase text-gray-500">
                   CERTIFICATIONS & TRAINING
                 </h3>
               </div>
 
               <motion.div 
-                className="bg-white rounded-[18px] p-5 border border-[#e0e0e0] hover:shadow-lg transition-all border-glow"
+                className="bg-[#16161a] rounded-[18px] p-5 border border-[#27272c] hover:shadow-lg transition-all border-glow"
                 variants={itemVariants}
               >
-                <ul className="space-y-3 font-mono text-[11px] text-gray-600 leading-normal">
+                <ul className="space-y-3 font-mono text-[11px] text-gray-300 leading-normal">
                   {certifications.map((cert, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <span className="text-[#0066cc] font-bold">✓</span>
+                      <span className="text-[#2997ff] font-bold">✓</span>
                       <span>{cert}</span>
                     </li>
                   ))}

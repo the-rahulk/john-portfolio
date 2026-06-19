@@ -65,17 +65,17 @@ export default function CodeUniverse() {
   };
 
   return (
-    <section id="code" className="w-full min-h-screen py-24 bg-[#f5f5f7] text-[#1d1d1f] flex items-center justify-center border-b border-[#e0e0e0]">
+    <section id="code" className="w-full min-h-screen py-24 bg-[#0d0d11] text-white flex items-center justify-center border-b border-[#27272c]">
       <div className="max-w-6xl w-full px-4 md:px-8">
         {/* Title Block */}
         <div className="mb-16 text-center lg:text-left">
-          <div className="font-mono text-[12px] text-[#0066cc] font-bold uppercase mb-2 tracking-widest">
+          <div className="font-mono text-[12px] text-[#2997ff] font-bold uppercase mb-2 tracking-widest">
             01 / Code Stage
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight apple-tight mb-4">
             DevOps Strategy & Stack
           </h2>
-          <p className="text-lg text-gray-500 font-sans max-w-2xl leading-relaxed">
+          <p className="text-lg text-gray-400 font-sans max-w-2xl leading-relaxed">
             Everything from enterprise release orchestration and multi-cloud platform topology to custom application server parameters and Datadog tracing.
           </p>
         </div>
@@ -93,12 +93,12 @@ export default function CodeUniverse() {
             return (
               <motion.div 
                 key={groupIdx} 
-                className="bg-white rounded-[18px] p-6 border border-[#e0e0e0] flex flex-col hover:shadow-lg transition-all border-glow"
+                className="bg-[#16161a] rounded-[18px] p-6 border border-[#27272c] flex flex-col hover:shadow-lg transition-all border-glow"
                 variants={itemVariants}
               >
-                <div className="flex items-center gap-2 mb-4 border-b border-[#f0f0f0] pb-3">
-                  <Icon className="w-4 h-4 text-[#0066cc]" />
-                  <h3 className="font-mono text-[11px] font-bold text-gray-400 tracking-widest uppercase">
+                <div className="flex items-center gap-2 mb-4 border-b border-[#27272c] pb-3">
+                  <Icon className="w-4 h-4 text-[#2997ff]" />
+                  <h3 className="font-mono text-[11px] font-bold text-gray-500 tracking-widest uppercase">
                     {group.title}
                   </h3>
                 </div>
@@ -107,7 +107,7 @@ export default function CodeUniverse() {
                   {group.skills.map((skill, skillIdx) => (
                     <motion.span
                       key={skillIdx}
-                      className="px-3 py-1.5 rounded-full text-[11px] font-mono font-medium transition-all bg-[#f5f5f7] border border-[#e0e0e0] text-[#1d1d1f] hover:bg-[#0066cc] hover:border-[#0066cc] hover:text-white cursor-pointer select-none active:scale-95 duration-200"
+                      className="px-3 py-1.5 rounded-full text-[11px] font-mono font-medium transition-all bg-[#242429] border border-[#2d2d34] text-gray-300 hover:bg-[#0066cc] hover:border-[#0066cc] hover:text-white cursor-pointer select-none active:scale-95 duration-200"
                       variants={tagVariants}
                     >
                       {skill}

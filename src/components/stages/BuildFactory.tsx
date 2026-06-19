@@ -141,7 +141,7 @@ export default function BuildFactory() {
               <button
                 onClick={triggerBuild}
                 disabled={buildStatus === "running"}
-                className={`w-full py-3 px-6 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
+                className={`w-fit mx-auto md:w-full py-3 px-8 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
                   buildStatus === "running"
                     ? "bg-gray-700 text-gray-400 cursor-not-allowed"
                     : "bg-[#0066cc] hover:bg-[#0071e3] text-white shadow-lg shadow-blue-500/10 active:scale-95"

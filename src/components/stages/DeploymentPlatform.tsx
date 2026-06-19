@@ -29,39 +29,39 @@ export default function DeploymentPlatform() {
   };
 
   return (
-    <section id="deploy" className="w-full min-h-screen py-24 bg-[#f5f5f7] text-[#1d1d1f] flex items-center justify-center border-b border-[#e0e0e0]">
+    <section id="deploy" className="w-full min-h-screen py-24 bg-[#0d0d11] text-white flex items-center justify-center border-b border-[#27272c]">
       <div className="max-w-6xl w-full px-4 md:px-8">
         {/* Title */}
         <div className="mb-16 text-center lg:text-left">
-          <div className="font-mono text-[12px] text-[#0066cc] font-bold uppercase mb-2 tracking-widest">
+          <div className="font-mono text-[12px] text-[#2997ff] font-bold uppercase mb-2 tracking-widest">
             05 / Deployment Platform
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight apple-tight mb-4">
             Deployment & Release Platform
           </h2>
-          <p className="text-lg text-gray-500 font-sans max-w-2xl leading-relaxed">
+          <p className="text-lg text-gray-400 font-sans max-w-2xl leading-relaxed">
             Zero-downtime Blue-Green deployments hosted on Azure AKS. Spin up new Helm-templated containers and shift routing safely.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Controls */}
-          <div className="lg:col-span-4 bg-white border border-[#e0e0e0] rounded-lg p-6 flex flex-col justify-between hover:shadow-lg transition-all border-glow">
+          <div className="lg:col-span-4 bg-[#16161a] border border-[#27272c] rounded-lg p-6 flex flex-col justify-between hover:shadow-lg transition-all border-glow">
             <div>
-              <div className="flex items-center gap-2 mb-6 border-b border-[#f0f0f0] pb-4">
-                <CloudLightning className="w-5 h-5 text-[#0066cc]" />
-                <h3 className="font-mono text-[13px] font-bold uppercase tracking-wider text-gray-500">
+              <div className="flex items-center gap-2 mb-6 border-b border-[#27272c] pb-4">
+                <CloudLightning className="w-5 h-5 text-[#2997ff]" />
+                <h3 className="font-mono text-[13px] font-bold uppercase tracking-wider text-gray-400">
                   Deploy Manager
                 </h3>
               </div>
 
               <div className="space-y-4 mb-6">
-                <div className="p-4 rounded-lg bg-[#f5f5f7] border border-[#e0e0e0]">
+                <div className="p-4 rounded-lg bg-[#242429] border border-[#2d2d34]">
                   <div className="flex justify-between items-center text-[11px] font-mono text-gray-400 mb-2">
-                    <span>BLUE ENVIROMENT (v1.0)</span>
+                    <span>BLUE ENVIRONMENT (v1.0)</span>
                     <span className="font-bold">{blueTraffic}%</span>
                   </div>
-                  <div className="w-full h-2 bg-[#e0e0e0] rounded-full overflow-hidden">
+                  <div className="w-full h-2 bg-[#27272a] rounded-full overflow-hidden">
                     <div 
                       className="h-full bg-[#0066cc] transition-all duration-300"
                       style={{ width: `${blueTraffic}%` }}
@@ -69,12 +69,12 @@ export default function DeploymentPlatform() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-lg bg-[#f5f5f7] border border-[#e0e0e0]">
+                <div className="p-4 rounded-lg bg-[#242429] border border-[#2d2d34]">
                   <div className="flex justify-between items-center text-[11px] font-mono text-gray-400 mb-2">
                     <span>GREEN ENVIRONMENT (v2.0)</span>
                     <span className="font-bold">{greenTraffic}%</span>
                   </div>
-                  <div className="w-full h-2 bg-[#e0e0e0] rounded-full overflow-hidden">
+                  <div className="w-full h-2 bg-[#27272a] rounded-full overflow-hidden">
                     <div 
                       className="h-full bg-emerald-500 transition-all duration-300"
                       style={{ width: `${greenTraffic}%` }}
@@ -86,7 +86,7 @@ export default function DeploymentPlatform() {
 
             <div>
               {status === "success" && (
-                <div className="mb-4 text-xs font-mono text-emerald-600 bg-emerald-50 border border-emerald-200/50 p-3 rounded-lg text-center font-bold">
+                <div className="mb-4 text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 p-3 rounded-lg text-center font-bold">
                   v2.0 PROMOTED TO PRODUCTION
                 </div>
               )}
@@ -94,9 +94,9 @@ export default function DeploymentPlatform() {
               <button
                 onClick={triggerDeploy}
                 disabled={deploying}
-                className={`w-full py-3 px-6 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
+                className={`w-fit mx-auto md:w-full py-3 px-8 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
                   deploying
-                    ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                    ? "bg-[#242429] text-gray-500 border border-[#2d2d34] cursor-not-allowed"
                     : "bg-[#0066cc] hover:bg-[#0071e3] text-white shadow-md active:scale-95"
                 }`}
               >
@@ -107,11 +107,11 @@ export default function DeploymentPlatform() {
           </div>
 
           {/* Infrastructure Map */}
-          <div className="lg:col-span-8 bg-white border border-[#e0e0e0] rounded-lg p-6 flex flex-col justify-between hover:shadow-lg transition-all border-glow">
-            <div className="flex items-center justify-between border-b border-[#f0f0f0] pb-4 mb-6">
-              <span className="font-mono text-[12px] font-bold text-gray-500 uppercase tracking-wider">Azure AKS Container Nodes</span>
-              <div className="flex items-center gap-1.5 text-xs text-gray-500 font-mono">
-                <Radio className="w-3.5 h-3.5 text-[#0066cc]" />
+          <div className="lg:col-span-8 bg-[#16161a] border border-[#27272c] rounded-lg p-6 flex flex-col justify-between hover:shadow-lg transition-all border-glow">
+            <div className="flex items-center justify-between border-b border-[#27272c] pb-4 mb-6">
+              <span className="font-mono text-[12px] font-bold text-gray-400 uppercase tracking-wider">Azure AKS Container Nodes</span>
+              <div className="flex items-center gap-1.5 text-xs text-gray-400 font-mono">
+                <Radio className="w-3.5 h-3.5 text-[#2997ff]" />
                 <span>LOAD_BALANCER_ACTIVE</span>
               </div>
             </div>
@@ -119,14 +119,14 @@ export default function DeploymentPlatform() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
               {/* Blue Group */}
               <div className={`p-5 rounded-lg border transition-all ${
-                blueTraffic > 0 ? "border-[#0066cc]/40 bg-[#0066cc]/5 shadow-sm" : "border-[#e0e0e0] opacity-50"
+                blueTraffic > 0 ? "border-[#2997ff]/40 bg-[#2997ff]/5 shadow-sm" : "border-[#27272c] opacity-50"
               }`}>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2">
-                    <Server className="w-4 h-4 text-[#0066cc]" />
-                    <span className="text-sm font-semibold">Blue Cluster (v1.0)</span>
+                    <Server className="w-4 h-4 text-[#2997ff]" />
+                    <span className="text-sm font-semibold text-white">Blue Cluster (v1.0)</span>
                   </div>
-                  <span className="text-xs font-mono font-bold text-[#0066cc]">{blueTraffic}% Load</span>
+                  <span className="text-xs font-mono font-bold text-[#2997ff]">{blueTraffic}% Load</span>
                 </div>
                 
                 <div className="grid grid-cols-4 gap-2">
@@ -135,8 +135,8 @@ export default function DeploymentPlatform() {
                       key={i} 
                       className={`h-8 rounded flex items-center justify-center font-mono text-[10px] border transition-all ${
                         blueTraffic > 0 
-                          ? "border-[#0066cc]/30 bg-[#0066cc]/10 text-[#0066cc] animate-pulse" 
-                          : "border-gray-200 text-gray-400 bg-gray-50"
+                          ? "border-[#2997ff]/30 bg-[#2997ff]/10 text-[#2997ff] animate-pulse" 
+                          : "border-[#2d2d34] text-gray-500 bg-[#242429]"
                       }`}
                     >
                       B-POD-{i}
@@ -147,12 +147,12 @@ export default function DeploymentPlatform() {
 
               {/* Green Group */}
               <div className={`p-5 rounded-lg border transition-all ${
-                greenTraffic > 0 ? "border-emerald-500/40 bg-emerald-500/5 shadow-sm" : "border-[#e0e0e0] opacity-50"
+                greenTraffic > 0 ? "border-emerald-500/40 bg-emerald-500/5 shadow-sm" : "border-[#27272c] opacity-50"
               }`}>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2">
                     <Server className="w-4 h-4 text-emerald-500" />
-                    <span className="text-sm font-semibold">Green Cluster (v2.0)</span>
+                    <span className="text-sm font-semibold text-white">Green Cluster (v2.0)</span>
                   </div>
                   <span className="text-xs font-mono font-bold text-emerald-500">{greenTraffic}% Load</span>
                 </div>
@@ -163,8 +163,8 @@ export default function DeploymentPlatform() {
                       key={i} 
                       className={`h-8 rounded flex items-center justify-center font-mono text-[10px] border transition-all ${
                         greenTraffic > 0 
-                          ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-600 animate-pulse" 
-                          : "border-gray-200 text-gray-400 bg-gray-50"
+                          ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-400 animate-pulse" 
+                          : "border-[#2d2d34] text-gray-500 bg-[#242429]"
                       }`}
                     >
                       G-POD-{i}

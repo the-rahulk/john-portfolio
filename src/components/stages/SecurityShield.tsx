@@ -134,7 +134,7 @@ export default function SecurityShield() {
               <button
                 onClick={triggerScan}
                 disabled={scanning}
-                className={`w-full py-3 px-6 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
+                className={`w-fit mx-auto md:w-full py-3 px-8 rounded-full font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer transition-all ${
                   scanning
                     ? "bg-gray-700 text-gray-400 cursor-not-allowed"
                     : "bg-[#0066cc] hover:bg-[#0071e3] text-white active:scale-95 shadow-lg shadow-blue-500/10"
