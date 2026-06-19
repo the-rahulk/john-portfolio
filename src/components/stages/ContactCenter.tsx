@@ -224,6 +224,7 @@ export default function ContactCenter() {
           {/* Console lines stream */}
           <div 
             ref={logContainerRef} 
+            data-lenis-prevent
             className="flex-1 overflow-y-auto font-mono text-[12px] space-y-1.5 pr-2 mb-4 scrollbar-none"
           >
             {history.map((line, idx) => (

@@ -113,7 +113,7 @@ export default function TestingGateway() {
               )}
             </div>
 
-            <div className="flex-1 overflow-y-auto font-mono text-[12px] text-gray-300 space-y-1.5 scrollbar-none max-h-[300px]">
+            <div data-lenis-prevent className="flex-1 overflow-y-auto font-mono text-[12px] text-gray-300 space-y-1.5 scrollbar-none max-h-[300px]">
               {runLogs.length === 0 ? (
                 <div className="h-full flex items-center justify-center text-gray-500 italic">
                   Gateway Idle. Ready to audit package sanity.

@@ -170,6 +170,7 @@ export default function BuildFactory() {
 
             <div 
               ref={logContainerRef}
+              data-lenis-prevent
               className="flex-1 overflow-y-auto font-mono text-[12px] text-gray-300 space-y-1.5 pr-2"
             >
               {logs.length === 0 ? (
