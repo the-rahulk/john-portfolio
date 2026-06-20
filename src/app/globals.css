@@ -107,3 +107,360 @@ body {
 .apple-press:active {
   transform: scale(0.95);
 }
+
+/* Global Light/Dark Theme Custom Overrides */
+[data-theme="light"] {
+  background-color: #ffffff;
+  color: #1d1d1f;
+}
+
+[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #1d1d1f;
+}
+
+/* Navigation Header Overrides */
+[data-theme="light"] nav {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: #e0e0e0 !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] nav span.text-white,
+[data-theme="light"] nav span.font-bold {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] nav a {
+  color: #515154 !important;
+}
+[data-theme="light"] nav a:hover {
+  color: #000000 !important;
+}
+[data-theme="light"] nav a.text-\[\#2997ff\] {
+  color: #0066cc !important;
+}
+
+/* Sub-Nav Overrides */
+[data-theme="light"] .fixed.top-\[44px\] {
+  background-color: rgba(245, 245, 247, 0.85) !important;
+  border-color: #e0e0e0 !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] .fixed.top-\[44px\] span {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] .fixed.top-\[44px\] span.text-gray-400 {
+  color: #515154 !important;
+}
+
+/* Hero Section */
+[data-theme="light"] #hero {
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #hero h1 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #hero h3 {
+  color: #515154 !important;
+}
+[data-theme="light"] #hero .bg-\[\#0A0A0F\],
+[data-theme="light"] #hero .bg-\[\#0a0a0f\] {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #hero .bg-\[\#0A0A0F\] h3,
+[data-theme="light"] #hero .bg-\[\#0a0a0f\] h3,
+[data-theme="light"] #hero .bg-\[\#0A0A0F\] li,
+[data-theme="light"] #hero .bg-\[\#0a0a0f\] li {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #hero .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  color: #0066cc !important;
+}
+[data-theme="light"] #hero .border-gray-600 {
+  border-color: #86868b !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #hero .border-gray-600:hover {
+  background-color: #f5f5f7 !important;
+}
+[data-theme="light"] #hero .bg-black {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #hero canvas {
+  background-color: #ffffff !important;
+}
+[data-theme="light"] #hero .bg-\[\#0f0f15\]\/90,
+[data-theme="light"] #hero .bg-\[\#0f0f15\]\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #e0e0e0 !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #hero .bg-\[\#0f0f15\]\/90 div,
+[data-theme="light"] #hero .bg-\[\#0f0f15\]\/95 div {
+  color: #1d1d1f !important;
+}
+
+/* Code Universe Section */
+[data-theme="light"] #code {
+  background-color: #f5f5f7 !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #code h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #code .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #code .bg-\[\#16161a\] {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+[data-theme="light"] #code .bg-\[\#242429\] {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+  color: #515154 !important;
+}
+[data-theme="light"] #code .bg-\[\#242429\]:hover {
+  background-color: #0066cc !important;
+  color: #ffffff !important;
+  border-color: #0066cc !important;
+}
+
+/* Build Factory Section */
+[data-theme="light"] #build {
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #build h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #build .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #build .bg-\[\#2a2a2c\] {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #build .bg-\[\#272729\] {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #build .bg-black {
+  background-color: #fafafc !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #build .text-gray-300 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #build .bg-\[\#252527\] {
+  background-color: #f5f5f7 !important;
+}
+
+/* Testing Gateway Section */
+[data-theme="light"] #test {
+  background-color: #f5f5f7 !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #test h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #test .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #test .bg-\[\#0d0d11\] {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #test .text-gray-300 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #test .bg-\[\#16161a\] {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+[data-theme="light"] #test .bg-\[\#242429\] {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #test .text-white {
+  color: #1d1d1f !important;
+}
+
+/* DevSecOps Shield Section */
+[data-theme="light"] #security {
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #security h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #security .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #security .bg-\[\#16161a\],
+[data-theme="light"] #security .bg-\[\#16161c\] {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #security .bg-black {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #security .text-white {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #security .border-emerald-500\/30 {
+  border-color: rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Deployment Platform Section */
+[data-theme="light"] #deploy {
+  background-color: #f5f5f7 !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #deploy h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #deploy .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #deploy .bg-\[\#16161a\] {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+[data-theme="light"] #deploy .bg-\[\#242429\] {
+  background-color: #fafafc !important;
+  border-color: #e0e0e0 !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #deploy .bg-emerald-500\/5 {
+  background-color: rgba(16, 185, 129, 0.04) !important;
+}
+[data-theme="light"] #deploy .bg-\[\#2997ff\]\/5 {
+  background-color: rgba(0, 102, 204, 0.04) !important;
+}
+[data-theme="light"] #deploy .text-white {
+  color: #1d1d1f !important;
+}
+
+/* Observability Mission Control Section */
+[data-theme="light"] #monitor {
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #monitor h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #monitor .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #monitor .bg-\[\#16161a\] {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #monitor .bg-black {
+  background-color: #fafafc !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #monitor .text-white {
+  color: #1d1d1f !important;
+}
+
+/* Auto Scaling Galaxy Section */
+[data-theme="light"] #scale {
+  background-color: #f5f5f7 !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #scale h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #scale .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #scale .bg-\[\#16161a\] {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+[data-theme="light"] #scale .bg-black {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #scale .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+[data-theme="light"] #scale .text-white {
+  color: #1d1d1f !important;
+}
+
+/* Experience Milestones Section */
+[data-theme="light"] #experience {
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #experience h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #experience .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #experience .bg-\[\#0a0a0f\] {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #experience .text-white {
+  color: #1d1d1f !important;
+}
+
+/* Contact Section */
+[data-theme="light"] #contact {
+  background-color: #f5f5f7 !important;
+  color: #1d1d1f !important;
+  border-color: #e0e0e0 !important;
+}
+[data-theme="light"] #contact h2 {
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #contact .text-gray-400 {
+  color: #515154 !important;
+}
+[data-theme="light"] #contact .bg-\[\#16161a\] {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+[data-theme="light"] #contact input,
+[data-theme="light"] #contact textarea {
+  background-color: #f5f5f7 !important;
+  border-color: #e0e0e0 !important;
+  color: #1d1d1f !important;
+}
+[data-theme="light"] #contact .text-white {
+  color: #1d1d1f !important;
+}
+
+/* Custom glow borders overrides in light mode */
+[data-theme="light"] .border-glow:hover {
+  border-color: #0066cc !important;
+  box-shadow: 0 0 12px rgba(0, 102, 204, 0.15) !important;
+}
+
