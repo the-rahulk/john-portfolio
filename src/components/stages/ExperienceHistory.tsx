@@ -66,6 +66,7 @@ const educationList = [
 const certifications = [
   "Microsoft Certified Azure Administrator (AZ-104)",
   "AWS Certified AI Practitioner (AIF-C01)",
+  "Claude Certified Architect - Foundation",
   "SCRUM Foundation - Professional Certificate",
   "ITIL V3 Foundation",
   "CKAD (Kubernetes Administration Training)"

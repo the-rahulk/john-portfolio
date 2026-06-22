@@ -54,10 +54,11 @@ const nodeDetails: Record<string, DetailData> = {
     details: [
       "Microsoft Certified Azure Administrator (AZ-104)",
       "AWS Certified AI Practitioner (AIF-C01)",
+      "Claude Certified Architect - Foundation (Anthropic)",
       "CKAD (Kubernetes Administration Training)",
       "SCRUM Foundation Certificate & ITIL V3 Foundation"
     ],
-    metrics: ["Azure AZ-104", "AWS AI Practitioner", "CKAD Training"]
+    metrics: ["Azure AZ-104", "AWS AI Practitioner", "Claude Architect", "CKAD Training"]
   },
   "education-node": {
     title: "Education",
@@ -90,7 +91,7 @@ export default function Hero() {
             DevOps Manager / Platform Architect
           </h3>
           <p className="text-[13px] text-gray-500 font-mono mb-8">
-            Mumbai, India · Azure AZ-104 · AWS AI Practitioner · CKA
+            Mumbai, India · Azure AZ-104 · AWS AI Practitioner · Claude Architect · CKA
           </p>
 
           {/* Action Buttons */}

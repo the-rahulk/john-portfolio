@@ -40,7 +40,7 @@ export default function ContactCenter() {
         setHistory([
           ...newHistory,
           { text: "JOHN D'SOUZA - Specialist Senior (Release Manager & Architect)", type: "success" },
-          { text: "Based in Mumbai, India. Azure AZ-104 & AWS AI Practitioner Certified.", type: "output" },
+          { text: "Based in Mumbai, India. Azure AZ-104, AWS AI Practitioner & Claude Certified Architect.", type: "output" },
           { text: "15+ years experience leading cloud automation, release cycles, and APM tracing.", type: "output" },
           { text: "Managed 15+ members across 4 platform teams at Deloitte.", type: "output" },
           { text: "Education: MCA Computer Applications (SIES, 2010) & B.Sc Computer Science (Birla, 2006).", type: "output" }
@@ -113,6 +113,7 @@ export default function ContactCenter() {
             credentials: [
               "Microsoft Certified Azure Administrator (AZ-104)",
               "AWS Certified AI Practitioner (AIF-C01)",
+              "Claude Certified Architect - Foundation",
               "SCRUM Foundation - Professional Certificate",
               "ITIL V3 Foundation"
             ],
